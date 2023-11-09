@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parallax Scrolling Website | Codehal</title>
+        <link rel="stylesheet" href="./assets/style.css">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+            integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+            crossorigin="anonymous"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="logo"><h1>GREEN-COCO</h1></div>
+            <div><ul><li>Home</li><li>About</li><li>Products</li></ul></div>
+            <div class="menubar"><ion-icon name="menu"></ion-icon></div>
+        </div>
+        <div class="container">
+            <img class="img1" src="./assets/images/hill1.png" alt>
+            <img class="img2" src="./assets/images/hill2.png" alt>
+            <img class="img3" src="./assets/images/hill3.png" alt>
+            <img class="img4" src="./assets/images/hill4.png" alt>
+            <img class="img5" src="./assets/images/hill5.png" alt>
+            <img class="img6" src="./assets/images/tree.png" alt>
+            <img class="img7" src="./assets/images/plant.png" alt>
+            <img class="img8" src="./assets/images/leaf.png" alt>
+        </div>
+
+        <div class="title">
+            <div class="title-container">
+                <div class="title-item">C</div>
+                <div class="title-item">O</div>
+                <div class="title-item">C</div>
+                <div class="title-item">O</div>
+                <div class="title-item">-</div>
+                <div class="title-item">T</div>
+                <div class="title-item">E</div>
+                <div class="title-item">N</div>
+                <div class="title-item">D</div>
+                <div class="title-item">E</div>
+                <div class="title-item">R</div>
+            </div>
+        </div>
+        <div class="copyright">Designed BY Mathan</div>
+      <script>  
+        TweenMax.from(".img1", 2, {
+            delay: .5,
+            y: 800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".img2", 2, {
+            delay: 2,
+            x: -1200,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".img3", 2, {
+            delay: 2,
+            x: 1400,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".img4", 2, {
+            delay: 1,
+            x: -1200,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".img5", 2, {
+            delay: 3,
+            y: 400,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".img6", 2, {
+            opacity: 0,
+            delay: 3.5,
+            x: -900,
+            ease: Expo.easeIn
+        })
+        TweenMax.from(".img7", 2, {
+            opacity: 0,
+            delay: 4,
+            y: 400,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".img8", 2, {
+            opacity: 0,
+            delay: 8,
+            y: -900,
+            x: 200,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".nav", 2, {
+            opacity: 0,
+            delay: .5,
+            x: -50,
+            ease: Expo.easeInOut
+        })
+        TweenMax.staggerFrom(".title-container > div", 3, {
+            delay: 5.3,
+            opacity: 0,
+            x: 30,
+            ease: Elastic.easeOut.config(3, 0.5)
+        }, 0.2)
+        TweenMax.from(".copyright", 2, {
+            opacity: 0,
+            delay: 8,
+            y: 100,
+            ease: Expo.easeInOut
+        })
+    </script>
+
+    </body>
+</html>
